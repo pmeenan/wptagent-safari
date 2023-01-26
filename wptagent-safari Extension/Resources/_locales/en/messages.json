@@ -1,0 +1,10 @@
+{
+    "extension_name": {
+        "message": "wptagent-safari Extension",
+        "description": "The display name for the extension."
+    },
+    "extension_description": {
+        "message": "Safari extension for relaying events to wptagent",
+        "description": "Relays navigation and network request events to wptagent."
+    }
+}

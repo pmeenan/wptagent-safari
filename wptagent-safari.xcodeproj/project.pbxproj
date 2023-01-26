@@ -1,0 +1,588 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 56;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		0FDF835A2982E3520063621F /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0FDF83592982E3520063621F /* AppDelegate.swift */; };
+		0FDF835E2982E3520063621F /* Main.html in Resources */ = {isa = PBXBuildFile; fileRef = 0FDF835C2982E3520063621F /* Main.html */; };
+		0FDF83602982E3520063621F /* Icon.png in Resources */ = {isa = PBXBuildFile; fileRef = 0FDF835F2982E3520063621F /* Icon.png */; };
+		0FDF83622982E3520063621F /* Style.css in Resources */ = {isa = PBXBuildFile; fileRef = 0FDF83612982E3520063621F /* Style.css */; };
+		0FDF83642982E3520063621F /* Script.js in Resources */ = {isa = PBXBuildFile; fileRef = 0FDF83632982E3520063621F /* Script.js */; };
+		0FDF83662982E3520063621F /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0FDF83652982E3520063621F /* ViewController.swift */; };
+		0FDF83692982E3520063621F /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 0FDF83672982E3520063621F /* Main.storyboard */; };
+		0FDF836B2982E3540063621F /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 0FDF836A2982E3540063621F /* Assets.xcassets */; };
+		0FDF83732982E3540063621F /* wptagent-safari Extension.appex in Embed Foundation Extensions */ = {isa = PBXBuildFile; fileRef = 0FDF83722982E3540063621F /* wptagent-safari Extension.appex */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
+		0FDF83782982E3540063621F /* SafariWebExtensionHandler.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0FDF83772982E3540063621F /* SafariWebExtensionHandler.swift */; };
+		0FDF837B2982E3540063621F /* _locales in Resources */ = {isa = PBXBuildFile; fileRef = 0FDF837A2982E3540063621F /* _locales */; };
+		0FDF837D2982E3540063621F /* images in Resources */ = {isa = PBXBuildFile; fileRef = 0FDF837C2982E3540063621F /* images */; };
+		0FDF837F2982E3540063621F /* manifest.json in Resources */ = {isa = PBXBuildFile; fileRef = 0FDF837E2982E3540063621F /* manifest.json */; };
+		0FDF83812982E3540063621F /* background.js in Resources */ = {isa = PBXBuildFile; fileRef = 0FDF83802982E3540063621F /* background.js */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		0FDF83742982E3540063621F /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 0FDF834E2982E3520063621F /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 0FDF83712982E3540063621F;
+			remoteInfo = "wptagent-safari Extension";
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		0FDF83912982E3540063621F /* Embed Foundation Extensions */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 13;
+			files = (
+				0FDF83732982E3540063621F /* wptagent-safari Extension.appex in Embed Foundation Extensions */,
+			);
+			name = "Embed Foundation Extensions";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
+
+/* Begin PBXFileReference section */
+		0FDF83562982E3520063621F /* wptagent-safari.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "wptagent-safari.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		0FDF83592982E3520063621F /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		0FDF835D2982E3520063621F /* Base */ = {isa = PBXFileReference; lastKnownFileType = text.html; name = Base; path = ../Base.lproj/Main.html; sourceTree = "<group>"; };
+		0FDF835F2982E3520063621F /* Icon.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Icon.png; sourceTree = "<group>"; };
+		0FDF83612982E3520063621F /* Style.css */ = {isa = PBXFileReference; lastKnownFileType = text.css; path = Style.css; sourceTree = "<group>"; };
+		0FDF83632982E3520063621F /* Script.js */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.javascript; path = Script.js; sourceTree = "<group>"; };
+		0FDF83652982E3520063621F /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		0FDF83682982E3520063621F /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		0FDF836A2982E3540063621F /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		0FDF836C2982E3540063621F /* wptagent_safari.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = wptagent_safari.entitlements; sourceTree = "<group>"; };
+		0FDF836D2982E3540063621F /* wptagent-safari.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = "wptagent-safari.entitlements"; sourceTree = "<group>"; };
+		0FDF83722982E3540063621F /* wptagent-safari Extension.appex */ = {isa = PBXFileReference; explicitFileType = "wrapper.app-extension"; includeInIndex = 0; path = "wptagent-safari Extension.appex"; sourceTree = BUILT_PRODUCTS_DIR; };
+		0FDF83772982E3540063621F /* SafariWebExtensionHandler.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SafariWebExtensionHandler.swift; sourceTree = "<group>"; };
+		0FDF837A2982E3540063621F /* _locales */ = {isa = PBXFileReference; lastKnownFileType = folder; path = _locales; sourceTree = "<group>"; };
+		0FDF837C2982E3540063621F /* images */ = {isa = PBXFileReference; lastKnownFileType = folder; path = images; sourceTree = "<group>"; };
+		0FDF837E2982E3540063621F /* manifest.json */ = {isa = PBXFileReference; lastKnownFileType = text.json; path = manifest.json; sourceTree = "<group>"; };
+		0FDF83802982E3540063621F /* background.js */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.javascript; path = background.js; sourceTree = "<group>"; };
+		0FDF838A2982E3540063621F /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		0FDF838B2982E3540063621F /* wptagent_safari_Extension.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = wptagent_safari_Extension.entitlements; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		0FDF83532982E3520063621F /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		0FDF836F2982E3540063621F /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		0FDF834D2982E3520063621F = {
+			isa = PBXGroup;
+			children = (
+				0FDF83582982E3520063621F /* wptagent-safari */,
+				0FDF83762982E3540063621F /* wptagent-safari Extension */,
+				0FDF83572982E3520063621F /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		0FDF83572982E3520063621F /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				0FDF83562982E3520063621F /* wptagent-safari.app */,
+				0FDF83722982E3540063621F /* wptagent-safari Extension.appex */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		0FDF83582982E3520063621F /* wptagent-safari */ = {
+			isa = PBXGroup;
+			children = (
+				0FDF83592982E3520063621F /* AppDelegate.swift */,
+				0FDF83652982E3520063621F /* ViewController.swift */,
+				0FDF83672982E3520063621F /* Main.storyboard */,
+				0FDF836A2982E3540063621F /* Assets.xcassets */,
+				0FDF836C2982E3540063621F /* wptagent_safari.entitlements */,
+				0FDF836D2982E3540063621F /* wptagent-safari.entitlements */,
+				0FDF835B2982E3520063621F /* Resources */,
+			);
+			path = "wptagent-safari";
+			sourceTree = "<group>";
+		};
+		0FDF835B2982E3520063621F /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				0FDF835C2982E3520063621F /* Main.html */,
+				0FDF835F2982E3520063621F /* Icon.png */,
+				0FDF83612982E3520063621F /* Style.css */,
+				0FDF83632982E3520063621F /* Script.js */,
+			);
+			path = Resources;
+			sourceTree = "<group>";
+		};
+		0FDF83762982E3540063621F /* wptagent-safari Extension */ = {
+			isa = PBXGroup;
+			children = (
+				0FDF83772982E3540063621F /* SafariWebExtensionHandler.swift */,
+				0FDF838A2982E3540063621F /* Info.plist */,
+				0FDF838B2982E3540063621F /* wptagent_safari_Extension.entitlements */,
+				0FDF83792982E3540063621F /* Resources */,
+			);
+			indentWidth = 2;
+			path = "wptagent-safari Extension";
+			sourceTree = "<group>";
+			tabWidth = 2;
+		};
+		0FDF83792982E3540063621F /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				0FDF837A2982E3540063621F /* _locales */,
+				0FDF837C2982E3540063621F /* images */,
+				0FDF837E2982E3540063621F /* manifest.json */,
+				0FDF83802982E3540063621F /* background.js */,
+			);
+			path = Resources;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		0FDF83552982E3520063621F /* wptagent-safari */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 0FDF83922982E3540063621F /* Build configuration list for PBXNativeTarget "wptagent-safari" */;
+			buildPhases = (
+				0FDF83522982E3520063621F /* Sources */,
+				0FDF83532982E3520063621F /* Frameworks */,
+				0FDF83542982E3520063621F /* Resources */,
+				0FDF83912982E3540063621F /* Embed Foundation Extensions */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				0FDF83752982E3540063621F /* PBXTargetDependency */,
+			);
+			name = "wptagent-safari";
+			productName = "wptagent-safari";
+			productReference = 0FDF83562982E3520063621F /* wptagent-safari.app */;
+			productType = "com.apple.product-type.application";
+		};
+		0FDF83712982E3540063621F /* wptagent-safari Extension */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 0FDF838E2982E3540063621F /* Build configuration list for PBXNativeTarget "wptagent-safari Extension" */;
+			buildPhases = (
+				0FDF836E2982E3540063621F /* Sources */,
+				0FDF836F2982E3540063621F /* Frameworks */,
+				0FDF83702982E3540063621F /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "wptagent-safari Extension";
+			productName = "wptagent-safari Extension";
+			productReference = 0FDF83722982E3540063621F /* wptagent-safari Extension.appex */;
+			productType = "com.apple.product-type.app-extension";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		0FDF834E2982E3520063621F /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				BuildIndependentTargetsInParallel = 1;
+				LastSwiftUpdateCheck = 1420;
+				LastUpgradeCheck = 1420;
+				TargetAttributes = {
+					0FDF83552982E3520063621F = {
+						CreatedOnToolsVersion = 14.2;
+					};
+					0FDF83712982E3540063621F = {
+						CreatedOnToolsVersion = 14.2;
+					};
+				};
+			};
+			buildConfigurationList = 0FDF83512982E3520063621F /* Build configuration list for PBXProject "wptagent-safari" */;
+			compatibilityVersion = "Xcode 14.0";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 0FDF834D2982E3520063621F;
+			productRefGroup = 0FDF83572982E3520063621F /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				0FDF83552982E3520063621F /* wptagent-safari */,
+				0FDF83712982E3540063621F /* wptagent-safari Extension */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		0FDF83542982E3520063621F /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				0FDF83602982E3520063621F /* Icon.png in Resources */,
+				0FDF83692982E3520063621F /* Main.storyboard in Resources */,
+				0FDF83642982E3520063621F /* Script.js in Resources */,
+				0FDF835E2982E3520063621F /* Main.html in Resources */,
+				0FDF836B2982E3540063621F /* Assets.xcassets in Resources */,
+				0FDF83622982E3520063621F /* Style.css in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		0FDF83702982E3540063621F /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				0FDF83812982E3540063621F /* background.js in Resources */,
+				0FDF837D2982E3540063621F /* images in Resources */,
+				0FDF837F2982E3540063621F /* manifest.json in Resources */,
+				0FDF837B2982E3540063621F /* _locales in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		0FDF83522982E3520063621F /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				0FDF83662982E3520063621F /* ViewController.swift in Sources */,
+				0FDF835A2982E3520063621F /* AppDelegate.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		0FDF836E2982E3540063621F /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				0FDF83782982E3540063621F /* SafariWebExtensionHandler.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		0FDF83752982E3540063621F /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 0FDF83712982E3540063621F /* wptagent-safari Extension */;
+			targetProxy = 0FDF83742982E3540063621F /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		0FDF835C2982E3520063621F /* Main.html */ = {
+			isa = PBXVariantGroup;
+			children = (
+				0FDF835D2982E3520063621F /* Base */,
+			);
+			name = Main.html;
+			sourceTree = "<group>";
+		};
+		0FDF83672982E3520063621F /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				0FDF83682982E3520063621F /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		0FDF838C2982E3540063621F /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				MACOSX_DEPLOYMENT_TARGET = 13.1;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = macosx;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		0FDF838D2982E3540063621F /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				MACOSX_DEPLOYMENT_TARGET = 13.1;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = macosx;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+			};
+			name = Release;
+		};
+		0FDF838F2982E3540063621F /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_ENTITLEMENTS = "wptagent-safari Extension/wptagent_safari_Extension.entitlements";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = NWBL8UVJPY;
+				ENABLE_HARDENED_RUNTIME = YES;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = "wptagent-safari Extension/Info.plist";
+				INFOPLIST_KEY_CFBundleDisplayName = "wptagent-safari Extension";
+				INFOPLIST_KEY_NSHumanReadableCopyright = "";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/../Frameworks",
+					"@executable_path/../../../../Frameworks",
+				);
+				MACOSX_DEPLOYMENT_TARGET = 10.14;
+				MARKETING_VERSION = 1.0;
+				OTHER_LDFLAGS = (
+					"-framework",
+					SafariServices,
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "org.webpagetest.wptagent-safari.Extension";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SKIP_INSTALL = YES;
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+			};
+			name = Debug;
+		};
+		0FDF83902982E3540063621F /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_ENTITLEMENTS = "wptagent-safari Extension/wptagent_safari_Extension.entitlements";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = NWBL8UVJPY;
+				ENABLE_HARDENED_RUNTIME = YES;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = "wptagent-safari Extension/Info.plist";
+				INFOPLIST_KEY_CFBundleDisplayName = "wptagent-safari Extension";
+				INFOPLIST_KEY_NSHumanReadableCopyright = "";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/../Frameworks",
+					"@executable_path/../../../../Frameworks",
+				);
+				MACOSX_DEPLOYMENT_TARGET = 10.14;
+				MARKETING_VERSION = 1.0;
+				OTHER_LDFLAGS = (
+					"-framework",
+					SafariServices,
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "org.webpagetest.wptagent-safari.Extension";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SKIP_INSTALL = YES;
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+			};
+			name = Release;
+		};
+		0FDF83932982E3540063621F /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_ENTITLEMENTS = "wptagent-safari/wptagent-safari.entitlements";
+				CODE_SIGN_STYLE = Automatic;
+				COMBINE_HIDPI_IMAGES = YES;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = NWBL8UVJPY;
+				ENABLE_HARDENED_RUNTIME = YES;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_CFBundleDisplayName = "wptagent-safari";
+				INFOPLIST_KEY_NSHumanReadableCopyright = "";
+				INFOPLIST_KEY_NSMainStoryboardFile = Main;
+				INFOPLIST_KEY_NSPrincipalClass = NSApplication;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/../Frameworks",
+				);
+				MACOSX_DEPLOYMENT_TARGET = 10.14;
+				MARKETING_VERSION = 1.0;
+				OTHER_LDFLAGS = (
+					"-framework",
+					SafariServices,
+					"-framework",
+					WebKit,
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "org.webpagetest.wptagent-safari";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+			};
+			name = Debug;
+		};
+		0FDF83942982E3540063621F /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_ENTITLEMENTS = "wptagent-safari/wptagent-safari.entitlements";
+				CODE_SIGN_STYLE = Automatic;
+				COMBINE_HIDPI_IMAGES = YES;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = NWBL8UVJPY;
+				ENABLE_HARDENED_RUNTIME = YES;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_CFBundleDisplayName = "wptagent-safari";
+				INFOPLIST_KEY_NSHumanReadableCopyright = "";
+				INFOPLIST_KEY_NSMainStoryboardFile = Main;
+				INFOPLIST_KEY_NSPrincipalClass = NSApplication;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/../Frameworks",
+				);
+				MACOSX_DEPLOYMENT_TARGET = 10.14;
+				MARKETING_VERSION = 1.0;
+				OTHER_LDFLAGS = (
+					"-framework",
+					SafariServices,
+					"-framework",
+					WebKit,
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "org.webpagetest.wptagent-safari";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		0FDF83512982E3520063621F /* Build configuration list for PBXProject "wptagent-safari" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				0FDF838C2982E3540063621F /* Debug */,
+				0FDF838D2982E3540063621F /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		0FDF838E2982E3540063621F /* Build configuration list for PBXNativeTarget "wptagent-safari Extension" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				0FDF838F2982E3540063621F /* Debug */,
+				0FDF83902982E3540063621F /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		0FDF83922982E3540063621F /* Build configuration list for PBXNativeTarget "wptagent-safari" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				0FDF83932982E3540063621F /* Debug */,
+				0FDF83942982E3540063621F /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 0FDF834E2982E3520063621F /* Project object */;
+}
