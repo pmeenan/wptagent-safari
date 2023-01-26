@@ -1,6 +1,6 @@
 {
     "extension_name": {
-        "message": "wptagent-safari Extension",
+        "message": "WebPageTest Safari Helper Extension",
         "description": "The display name for the extension."
     },
     "extension_description": {
