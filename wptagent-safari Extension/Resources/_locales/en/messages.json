@@ -1,7 +1,7 @@
 {
     "extension_name": {
-        "message": "WebPageTest Safari Helper Extension",
-        "description": "The display name for the extension."
+        "message": "WebPageTest Agent Helper Extension",
+        "description": "WebPageTest Agent Helper extension."
     },
     "extension_description": {
         "message": "Safari extension for relaying events to wptagent",

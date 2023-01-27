@@ -15,7 +15,7 @@
 		0FDF83662982E3520063621F /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0FDF83652982E3520063621F /* ViewController.swift */; };
 		0FDF83692982E3520063621F /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 0FDF83672982E3520063621F /* Main.storyboard */; };
 		0FDF836B2982E3540063621F /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 0FDF836A2982E3540063621F /* Assets.xcassets */; };
-		0FDF83732982E3540063621F /* wptagent-safari Extension.appex in Embed Foundation Extensions */ = {isa = PBXBuildFile; fileRef = 0FDF83722982E3540063621F /* wptagent-safari Extension.appex */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
+		0FDF83732982E3540063621F /* WebPageTest Agent Helper Extension.appex in Embed Foundation Extensions */ = {isa = PBXBuildFile; fileRef = 0FDF83722982E3540063621F /* WebPageTest Agent Helper Extension.appex */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
 		0FDF83782982E3540063621F /* SafariWebExtensionHandler.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0FDF83772982E3540063621F /* SafariWebExtensionHandler.swift */; };
 		0FDF837B2982E3540063621F /* _locales in Resources */ = {isa = PBXBuildFile; fileRef = 0FDF837A2982E3540063621F /* _locales */; };
 		0FDF837D2982E3540063621F /* images in Resources */ = {isa = PBXBuildFile; fileRef = 0FDF837C2982E3540063621F /* images */; };
@@ -40,7 +40,7 @@
 			dstPath = "";
 			dstSubfolderSpec = 13;
 			files = (
-				0FDF83732982E3540063621F /* wptagent-safari Extension.appex in Embed Foundation Extensions */,
+				0FDF83732982E3540063621F /* WebPageTest Agent Helper Extension.appex in Embed Foundation Extensions */,
 			);
 			name = "Embed Foundation Extensions";
 			runOnlyForDeploymentPostprocessing = 0;
@@ -48,7 +48,7 @@
 /* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
-		0FDF83562982E3520063621F /* wptagent-safari.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "wptagent-safari.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		0FDF83562982E3520063621F /* WebPageTest Agent Helper.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "WebPageTest Agent Helper.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		0FDF83592982E3520063621F /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		0FDF835D2982E3520063621F /* Base */ = {isa = PBXFileReference; lastKnownFileType = text.html; name = Base; path = ../Base.lproj/Main.html; sourceTree = "<group>"; };
 		0FDF835F2982E3520063621F /* Icon.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Icon.png; sourceTree = "<group>"; };
@@ -59,7 +59,7 @@
 		0FDF836A2982E3540063621F /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		0FDF836C2982E3540063621F /* wptagent_safari.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = wptagent_safari.entitlements; sourceTree = "<group>"; };
 		0FDF836D2982E3540063621F /* wptagent-safari.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = "wptagent-safari.entitlements"; sourceTree = "<group>"; };
-		0FDF83722982E3540063621F /* wptagent-safari Extension.appex */ = {isa = PBXFileReference; explicitFileType = "wrapper.app-extension"; includeInIndex = 0; path = "wptagent-safari Extension.appex"; sourceTree = BUILT_PRODUCTS_DIR; };
+		0FDF83722982E3540063621F /* WebPageTest Agent Helper Extension.appex */ = {isa = PBXFileReference; explicitFileType = "wrapper.app-extension"; includeInIndex = 0; path = "WebPageTest Agent Helper Extension.appex"; sourceTree = BUILT_PRODUCTS_DIR; };
 		0FDF83772982E3540063621F /* SafariWebExtensionHandler.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SafariWebExtensionHandler.swift; sourceTree = "<group>"; };
 		0FDF837A2982E3540063621F /* _locales */ = {isa = PBXFileReference; lastKnownFileType = folder; path = _locales; sourceTree = "<group>"; };
 		0FDF837C2982E3540063621F /* images */ = {isa = PBXFileReference; lastKnownFileType = folder; path = images; sourceTree = "<group>"; };
@@ -99,8 +99,8 @@
 		0FDF83572982E3520063621F /* Products */ = {
 			isa = PBXGroup;
 			children = (
-				0FDF83562982E3520063621F /* wptagent-safari.app */,
-				0FDF83722982E3540063621F /* wptagent-safari Extension.appex */,
+				0FDF83562982E3520063621F /* WebPageTest Agent Helper.app */,
+				0FDF83722982E3540063621F /* WebPageTest Agent Helper Extension.appex */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -173,7 +173,7 @@
 			);
 			name = "wptagent-safari";
 			productName = "wptagent-safari";
-			productReference = 0FDF83562982E3520063621F /* wptagent-safari.app */;
+			productReference = 0FDF83562982E3520063621F /* WebPageTest Agent Helper.app */;
 			productType = "com.apple.product-type.application";
 		};
 		0FDF83712982E3540063621F /* wptagent-safari Extension */ = {
@@ -190,7 +190,7 @@
 			);
 			name = "wptagent-safari Extension";
 			productName = "wptagent-safari Extension";
-			productReference = 0FDF83722982E3540063621F /* wptagent-safari Extension.appex */;
+			productReference = 0FDF83722982E3540063621F /* WebPageTest Agent Helper Extension.appex */;
 			productType = "com.apple.product-type.app-extension";
 		};
 /* End PBXNativeTarget section */
@@ -428,7 +428,7 @@
 				ENABLE_HARDENED_RUNTIME = YES;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_FILE = "wptagent-safari Extension/Info.plist";
-				INFOPLIST_KEY_CFBundleDisplayName = "wptagent-safari Extension";
+				INFOPLIST_KEY_CFBundleDisplayName = "WebPageTest Agent Helper Extension";
 				INFOPLIST_KEY_NSHumanReadableCopyright = "";
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
@@ -442,7 +442,7 @@
 					SafariServices,
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = "org.webpagetest.wptagent-safari.Extension";
-				PRODUCT_NAME = "$(TARGET_NAME)";
+				PRODUCT_NAME = "WebPageTest Agent Helper Extension";
 				SKIP_INSTALL = YES;
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 5.0;
@@ -459,7 +459,7 @@
 				ENABLE_HARDENED_RUNTIME = YES;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_FILE = "wptagent-safari Extension/Info.plist";
-				INFOPLIST_KEY_CFBundleDisplayName = "wptagent-safari Extension";
+				INFOPLIST_KEY_CFBundleDisplayName = "WebPageTest Agent Helper Extension";
 				INFOPLIST_KEY_NSHumanReadableCopyright = "";
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
@@ -473,7 +473,7 @@
 					SafariServices,
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = "org.webpagetest.wptagent-safari.Extension";
-				PRODUCT_NAME = "$(TARGET_NAME)";
+				PRODUCT_NAME = "WebPageTest Agent Helper Extension";
 				SKIP_INSTALL = YES;
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 5.0;
@@ -493,7 +493,7 @@
 				DEVELOPMENT_TEAM = NWBL8UVJPY;
 				ENABLE_HARDENED_RUNTIME = YES;
 				GENERATE_INFOPLIST_FILE = YES;
-				INFOPLIST_KEY_CFBundleDisplayName = "WebPageTest Safari Helper";
+				INFOPLIST_KEY_CFBundleDisplayName = "WebPageTest Agent Helper";
 				INFOPLIST_KEY_LSApplicationCategoryType = "public.app-category.developer-tools";
 				INFOPLIST_KEY_NSHumanReadableCopyright = "";
 				INFOPLIST_KEY_NSMainStoryboardFile = Main;
@@ -511,7 +511,7 @@
 					WebKit,
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = "org.webpagetest.wptagent-safari";
-				PRODUCT_NAME = "$(TARGET_NAME)";
+				PRODUCT_NAME = "WebPageTest Agent Helper";
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 5.0;
 			};
@@ -530,7 +530,7 @@
 				DEVELOPMENT_TEAM = NWBL8UVJPY;
 				ENABLE_HARDENED_RUNTIME = YES;
 				GENERATE_INFOPLIST_FILE = YES;
-				INFOPLIST_KEY_CFBundleDisplayName = "WebPageTest Safari Helper";
+				INFOPLIST_KEY_CFBundleDisplayName = "WebPageTest Agent Helper";
 				INFOPLIST_KEY_LSApplicationCategoryType = "public.app-category.developer-tools";
 				INFOPLIST_KEY_NSHumanReadableCopyright = "";
 				INFOPLIST_KEY_NSMainStoryboardFile = Main;
@@ -548,7 +548,7 @@
 					WebKit,
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = "org.webpagetest.wptagent-safari";
-				PRODUCT_NAME = "$(TARGET_NAME)";
+				PRODUCT_NAME = "WebPageTest Agent Helper";
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 5.0;
 			};
